@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-auth-session-cookie",
+  "version": "1.0.0",
+  "description": "Ini adalah repository authentication menggunakan NodeJS dan ExpressJS dengan session dan cookie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kanglerian",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.3",
+    "nodemon": "^2.0.16"
+  }
+}
