@@ -24,6 +24,19 @@ const account = [
     }
 ];
 
+const anggota = [
+    {
+        nama: "Lerian Febriana",
+        jabatan: "Staff IT",
+        alamat: "Kota Tasikmalaya"
+    },
+    {
+        nama: "Sopyan Sauri",
+        jabatan: "Staff IT",
+        alamat: "Kabputen Tasikmalaya"
+    },
+];
+
 app.get('/', (req, res) => {
     res.render('login', {
         layout: 'layouts/template'
@@ -59,6 +72,10 @@ app.get('/logout', (req, res) => {
             res.redirect('/');
         }
     });
+});
+
+app.get('/api/anggota', (req, res) => {
+    res.json(anggota);
 });
 
 app.listen(port, (req, res) => {
